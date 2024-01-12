@@ -1,0 +1,141 @@
+@import '../variables';
+
+.wrapper {
+  max-width: 1465px;
+  margin: 0 auto;
+}
+
+.container {
+  height: 117px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  margin: auto 0;
+}
+
+.logoText {
+  font-size: 40px;
+  margin: auto 0;
+  margin-right: 59px;
+}
+
+.vl {
+  margin: auto 0;
+  border-left: 2px solid $greyLine;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.description {
+  margin: auto 0;
+  width: 200px;
+  margin-right: 103px;
+  // font-size: 18px;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: auto 0;
+  width: 215px;
+  margin-right: 78px;
+}
+
+.tel,
+.mail {
+  font-family: Cambria, 'Playfair Display', serif;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.tel {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.mail {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  // font-size: 18px;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 0;
+}
+//TODO добавить анимацию-цветом при наведении на соц сети
+.viber,
+.whatsapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.viber {
+  margin-right: 21px;
+}
+
+.whatsapp {
+  margin-right: 88px;
+}
+
+.viberLogo,
+.whatsappLogo {
+  width: 28px;
+  height: 28px;
+  margin: auto 0;
+}
+
+.viberLogo,
+.whatsappLogo {
+  margin-right: 7px;
+}
+
+.viberLogoText,
+.whatsappLogoText {
+  margin: auto 0;
+  font-family: Cambria, 'Playfair Display', serif;
+  // font-size: 18px;
+}
+//TODO добавить анимацию смены цвета при наведении на кнопку
+.callback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 0;
+  width: 230px;
+  height: 58px;
+  border: 1px solid $greyLine;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $greyLine;
+  }
+}
+
+.callbackText {
+  margin: auto;
+  // font-size: 18px;
+}

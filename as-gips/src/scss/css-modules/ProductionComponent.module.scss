@@ -1,0 +1,28 @@
+@import '../variables';
+
+.bg {
+  background-color: $productionBG;
+}
+
+.wrapper {
+  max-width: 1465px;
+  margin: 0 auto;
+}
+
+.container {
+  // position: relative;
+  // height: 591px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  // padding-left: 129px;
+}
+
+.header2 {
+  font-size: 40px;
+  margin: 55px auto;
+}
