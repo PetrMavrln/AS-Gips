@@ -7,7 +7,7 @@ const NavComponent = () => {
       {/* TODO сделать ссылки якори */}
       <ul className={styles.navUl}>
         <li>
-          <a href="#" className={styles.link}>
+          <a href="#production" className={styles.link}>
             Что мы производим
           </a>
         </li>

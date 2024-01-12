@@ -7,7 +7,9 @@ const ProductionComponent = () => {
     <div className={styles.bg}>
       <div className={styles.wrapper}>
         <section className={styles.container}>
-          <h2 className={styles.header2}>Что мы производим</h2>
+          <h2 className={styles.header2} id="production">
+            Что мы производим
+          </h2>
           <AssortmentCardsComponent />
         </section>
       </div>

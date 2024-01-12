@@ -28,7 +28,12 @@ const HeaderComponent = () => {
           </a>
         </div>
         <div className={styles.socials}>
-          <div className={styles.viber}>
+          <a
+            className={styles.viber}
+            href="viber://contact?number=+79878033963"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className={styles.viberLogo}
               // src={require('../assets/Viber-Logo.png')}
@@ -38,8 +43,14 @@ const HeaderComponent = () => {
               height="28"
             />
             <span className={styles.viberLogoText}>viber</span>
-          </div>
-          <div className={styles.whatsapp}>
+          </a>
+
+          <a
+            href="https://api.whatsapp.com/send?phone=79878033963"
+            className={styles.whatsapp}
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className={styles.whatsappLogo}
               // src={require('../assets/WhatsApp-icon.png')}
@@ -49,7 +60,7 @@ const HeaderComponent = () => {
               height="28"
             />
             <span className={styles.whatsappLogoText}>whatsapp</span>
-          </div>
+          </a>
         </div>
         {/* <button className={styles.callback}>Обратный звонок</button> */}
         <div className={styles.callback}>
