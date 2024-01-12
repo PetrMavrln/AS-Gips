@@ -1,6 +1,7 @@
 {
   "name": "as-gips",
   "version": "0.1.0",
+  "homepage": "https://PetrMavrln.github.io/AS-Gips",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -17,6 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build:css": "sass src/ ",
     "start": "react-scripts start",
     "start+": "npm-run-all -p watch:css start:js",
@@ -48,6 +51,7 @@
     "@types/node-sass": "^4.11.7",
     "eslint": "^8.56.0",
     "eslint-plugin-perfectionist": "^2.5.0",
+    "gh-pages": "^6.1.1",
     "npm-run-all": "^4.1.5",
     "sass": "^1.69.7"
   }
