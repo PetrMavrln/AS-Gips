@@ -1,0 +1,10 @@
+{
+  "short_name": "AS Gips",
+  "name": "AS Gips - интерьерный лепной декор",
+  "icons": [
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
