@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.2ffaf912.css",
-    "main.js": "./static/js/main.9bfbdd9e.js",
+    "main.css": "./static/css/main.4783ced3.css",
+    "main.js": "./static/js/main.f5c3760c.js",
     "static/media/logo.png": "./static/media/logo.f13a52d2ebf0db38c1f1.png",
     "static/media/representImg.png": "./static/media/representImg.a34713a31b9811dcbcda.png",
     "static/media/prod11.png": "./static/media/prod11.73a73c4cbd19d34c6da5.png",
@@ -16,11 +16,11 @@
     "static/media/Viber-Logo.svg": "./static/media/Viber-Logo.f1b8b8a06cc81a336979a85bc0231de3.svg",
     "static/media/WhatsApp-icon.svg": "./static/media/WhatsApp-icon.6b1cea7ff7a64568d1aa948a79a5d8d7.svg",
     "index.html": "./index.html",
-    "main.2ffaf912.css.map": "./static/css/main.2ffaf912.css.map",
-    "main.9bfbdd9e.js.map": "./static/js/main.9bfbdd9e.js.map"
+    "main.4783ced3.css.map": "./static/css/main.4783ced3.css.map",
+    "main.f5c3760c.js.map": "./static/js/main.f5c3760c.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ffaf912.css",
-    "static/js/main.9bfbdd9e.js"
+    "static/css/main.4783ced3.css",
+    "static/js/main.f5c3760c.js"
   ]
 }
