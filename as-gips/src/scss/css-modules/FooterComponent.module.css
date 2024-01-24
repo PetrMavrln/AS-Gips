@@ -1,3 +1,8 @@
+.fullScreenWr {
+  width: 100%;
+  border-top: 1px solid #6b6b6b;
+}
+
 .wrapper {
   max-width: 1465px;
   margin: 0 auto;
@@ -11,16 +16,18 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.header2 {
-  font-size: clamp(1.61rem, 1.15rem + 1.25vw, 2.36rem);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 55px auto;
 }
 @media (max-width: 450px) {
-  .header2 {
+  .container {
     margin: 30px auto;
   }
 }
 
-/*# sourceMappingURL=ProductionComponent.module.css.map */
+/*# sourceMappingURL=FooterComponent.module.css.map */

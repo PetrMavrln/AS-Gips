@@ -1,47 +1,37 @@
 import React from 'react';
 import styles from '../scss/css-modules/RepresentComponent.module.css';
-import NavComponent from './NavComponent';
-import reprImg1 from '../assets/RepresentComponent/represent3.png';
-import reprImg2 from '../assets/RepresentComponent/represent2.png';
-import reprImg3 from '../assets/RepresentComponent/represent1.png';
+import reprImg from '../assets/RepresentComponent/representImg.png';
 
 const RepresentComponent = () => {
   return (
     <div className={styles.wrapper}>
       <section className={styles.container}>
-        <NavComponent />
-        <h1 className={styles.header1}>Интерьерный лепной декор</h1>
-        <p className={styles.par1}>Полный цикл от проекта до монтажа и финишной покраски</p>
-        <p className={styles.par2}>Работаем по всей территории России</p>
-        <div className={styles.buttons}>
-          <div className={styles.examplesButton}>
-            <span className={styles.examplesButtonText}>Посмотреть примеры</span>
-          </div>
-          <div className={styles.paymentButton}>
-            <span className={styles.paymentButtonText}>Заявка на расчет</span>
-          </div>
+        <img
+          className={styles.reprImg}
+          src={reprImg}
+          alt="ИЗображение карниза"
+          width="765"
+          // height="363"
+        />
+        <div className={styles.text}>
+          <h2 className={styles.header2}>О нас</h2>
+          <p className={styles.par}>Занимаемся производством лепного декора с 2001-го года.</p>
+          <ul className={styles.ul}>
+            <li className={styles.li}>
+              Изготавливаем интерьерный декор из гипса, пластикрита и литьевого камня, для
+              интерьеров коттеджей, квартир, частных домов и общественных зданий.
+            </li>
+            <li className={styles.li}>
+              Наличие квалифицированного персонала и индивидуальный подход к авторским проектам
+              позволяет оптимизировать производство под максимально короткие сроки.
+            </li>
+            <li className={styles.li}>
+              Производство проходит этапы от работы с дизайн-проектом и моделирования, до финишного
+              покрытия
+            </li>
+          </ul>
+          <p className={styles.par}>Конечный результат говорит сам за себя.</p>
         </div>
-        <img
-          className={styles.reprImg1}
-          src={reprImg1}
-          alt="ИЗображение карниза"
-          // width="529"
-          height="363"
-        />
-        <img
-          className={styles.reprImg2}
-          src={reprImg2}
-          alt="ИЗображение карниза"
-          // width="393"
-          height="380"
-        />
-        <img
-          className={styles.reprImg3}
-          src={reprImg3}
-          alt="ИЗображение карниза"
-          // width="256"
-          height="222"
-        />
       </section>
     </div>
   );

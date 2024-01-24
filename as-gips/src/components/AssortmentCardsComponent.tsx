@@ -83,6 +83,3 @@ const AssortmentCardsComponent = () => {
 };
 
 export default AssortmentCardsComponent;
-
-// w 255
-// h 215

@@ -3,47 +3,59 @@
 .nav {
   position: absolute;
   top: 15px;
-  left: 149px;
+  left: 129px;
+  z-index: 2;
 }
 
 .navUl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 1px solid $greyBG;
 
   li {
-    &:last-child {
-      a {
-        margin-right: 0;
-      }
-    }
+    // padding: 15px 0;
+    background-color: $greyBG;
+    // &:first-child {
+    //   padding-left: 15px;
+    // }
+    // &:last-child {
+    //   // padding-right: 15px;
+    //   a {
+    //     margin-right: 0;
+    //   }
+    // }
   }
 }
 
 .link {
+  display: inline-block;
   font-family: Cambria, 'Playfair Display', serif;
   font-size: 20px;
-  color: inherit;
+  color: white;
   text-decoration: inherit;
-  margin-right: 75px;
+  // margin-right: 75px;
 
-  -webkit-box-shadow: inset 0 0 0 0 $greyLine;
-
-  box-shadow: inset 0 0 0 0 $greyLine;
+  // -webkit-box-shadow: inset 0 0 0 0 $greyLine;
+  // box-shadow: inset 0 0 0 0 $greyLine;
   // margin: 0 -0.25rem;
-  padding: 5px;
-  -webkit-transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
-    -webkit-box-shadow 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
-    -webkit-box-shadow 0.3s ease-in-out;
+  padding: 15px;
+
+  // -webkit-transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  // transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  // -o-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  // transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  // transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+  //   -webkit-box-shadow 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
   //TODO добавить анимацию подчеркивания и отступ вниз
   &:hover {
-    -webkit-box-shadow: inset 200px 0 0 0 $greyLine;
-    box-shadow: inset 200px 0 0 0 $greyLine;
+    // -webkit-box-shadow: inset 200px 0 0 0 $greyLine;
+    // box-shadow: inset 200px 0 0 0 $greyLine;
+    color: inherit;
+    background-color: white;
   }
 }

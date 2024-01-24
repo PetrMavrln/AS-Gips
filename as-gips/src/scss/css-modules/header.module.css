@@ -1,13 +1,21 @@
+.fullScreenWr {
+  width: 100%;
+  border-bottom: 1px solid #6b6b6b;
+}
+
 .wrapper {
   max-width: 1465px;
   margin: 0 auto;
 }
 
 .container {
-  height: 117px;
+  height: 115px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .logoContainer {
@@ -15,29 +23,41 @@
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 900px) {
+  .logoContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .logo {
   margin: auto 0;
   margin-right: 10px;
 }
+@media (max-width: 900px) {
+  .logo {
+    width: 60px;
+    height: 61px;
+    margin-right: 0;
+  }
+}
 
 .logoText {
-  font-size: 40px;
+  font-size: clamp(1.61rem, 1.15rem + 1.25vw, 2.36rem);
   margin: auto 0;
-  margin-right: 59px;
 }
 
-.vl {
+.header1 {
   margin: auto 0;
-  border-left: 2px solid #e9e9e9;
-  height: 50px;
-  margin-right: 20px;
+  font-size: clamp(1.205rem, 0.5rem + 1.25vw, 1.415rem);
 }
-
-.description {
-  margin: auto 0;
-  width: 200px;
-  margin-right: 103px;
+@media (max-width: 500px) {
+  .header1 {
+    display: none;
+  }
 }
 
 .contacts {
@@ -49,8 +69,6 @@
   -ms-flex-direction: column;
   flex-direction: column;
   margin: auto 0;
-  width: 215px;
-  margin-right: 73px;
 }
 
 .tel,
@@ -58,14 +76,35 @@
   font-family: Cambria, "Playfair Display", serif;
   color: inherit;
   text-decoration: inherit;
+  padding: 5px;
+  -webkit-transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+.tel:hover,
+.mail:hover {
+  cursor: pointer;
+  -webkit-box-shadow: inset 210px 0 0 0 #e9e9e9;
+  box-shadow: inset 210px 0 0 0 #e9e9e9;
 }
 
 .tel {
-  font-size: 25px;
+  font-size: clamp(1.205rem, 0.5rem + 1.25vw, 1.415rem);
   font-weight: bold;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 900px) {
+  .tel {
+    font-size: clamp(0.935rem, 0.15rem + 1.25vw, 1.06rem);
+  }
 }
 
 .mail {
+  font-size: clamp(0.935rem, 0.15rem + 1.25vw, 1.06rem);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -76,6 +115,14 @@
   display: -ms-flexbox;
   display: flex;
   margin: auto 0;
+}
+@media (max-width: 900px) {
+  .socials {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 .viber,
@@ -94,10 +141,6 @@
   -o-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 .viber:hover,
 .whatsapp:hover {
@@ -109,9 +152,10 @@
 .viber {
   margin-right: 11px;
 }
-
-.whatsapp {
-  margin-right: 83px;
+@media (max-width: 900px) {
+  .viber {
+    margin-right: 0;
+  }
 }
 
 .viberLogo,
@@ -125,32 +169,24 @@
 .whatsappLogo {
   margin-right: 7px;
 }
+@media (max-width: 900px) {
+  .viberLogo,
+  .whatsappLogo {
+    margin-right: 0;
+  }
+}
 
 .viberLogoText,
 .whatsappLogoText {
+  font-size: clamp(0.935rem, 0.15rem + 1.25vw, 1.06rem);
   margin: auto 0;
   font-family: Cambria, "Playfair Display", serif;
 }
-
-.callback {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto 0;
-  width: 230px;
-  height: 58px;
-  border: 1px solid #e9e9e9;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-}
-.callback:hover {
-  cursor: pointer;
-  background-color: #e9e9e9;
-}
-
-.callbackText {
-  margin: auto;
+@media (max-width: 900px) {
+  .viberLogoText,
+  .whatsappLogoText {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=header.module.css.map */

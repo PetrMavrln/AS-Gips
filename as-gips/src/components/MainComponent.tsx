@@ -1,14 +1,16 @@
 import React from 'react';
 import RepresentComponent from './RepresentComponent';
 import ProductionComponent from './ProductionComponent';
-// import styles from '../scss/css-modules/main.module.css';
+import ExamplesComponent from './ExamplesComponent';
+import FooterComponent from './FooterComponent';
 
 const MainComponent = () => {
   return (
-    // className={styles.main}
     <main>
       <RepresentComponent />
       <ProductionComponent />
+      <ExamplesComponent />
+      <FooterComponent />
     </main>
   );
 };

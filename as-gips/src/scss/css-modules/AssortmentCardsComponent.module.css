@@ -7,7 +7,12 @@
   justify-content: space-evenly;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-bottom: 75px;
+  margin-bottom: 25px;
+}
+@media (max-width: 450px) {
+  .cards {
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=AssortmentCardsComponent.module.css.map */

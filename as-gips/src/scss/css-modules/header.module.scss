@@ -1,46 +1,62 @@
 @import '../variables';
 
+.fullScreenWr {
+  width: 100%;
+  border-bottom: 1px solid $greyBG;
+}
+
 .wrapper {
   max-width: 1465px;
   margin: 0 auto;
 }
 
 .container {
-  height: 117px;
+  height: 115px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .logoContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
+  @media (max-width: 900px) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .logo {
   margin: auto 0;
   margin-right: 10px;
+
+  @media (max-width: 900px) {
+    width: 60px;
+    height: 61px;
+    margin-right: 0;
+  }
 }
 
 .logoText {
-  font-size: 40px;
+  font-size: clamp(1.61rem, calc(1.15rem + 1.25vw), 2.36rem);
   margin: auto 0;
-  margin-right: 59px;
 }
 
-.vl {
+.header1 {
   margin: auto 0;
-  border-left: 2px solid $greyLine;
-  height: 50px;
-  margin-right: 20px;
-}
+  font-size: clamp(1.205rem, calc(0.5rem + 1.25vw), 1.415rem);
 
-.description {
-  margin: auto 0;
-  width: 200px;
-  margin-right: 103px;
-  // font-size: 18px;
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
 
 .contacts {
@@ -52,8 +68,6 @@
   -ms-flex-direction: column;
   flex-direction: column;
   margin: auto 0;
-  width: 215px;
-  margin-right: 73px;
 }
 
 .tel,
@@ -61,18 +75,38 @@
   font-family: Cambria, 'Playfair Display', serif;
   color: inherit;
   text-decoration: inherit;
+  padding: 5px;
+  -webkit-transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    -webkit-box-shadow: inset 210px 0 0 0 $greyLine;
+    box-shadow: inset 210px 0 0 0 $greyLine;
+  }
 }
 
 .tel {
-  font-size: 25px;
+  font-size: clamp(1.205rem, calc(0.5rem + 1.25vw), 1.415rem);
   font-weight: bold;
-}
-
-.mail {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  // font-size: 18px;
+
+  @media (max-width: 900px) {
+    font-size: clamp(0.935rem, calc(0.15rem + 1.25vw), 1.06rem);
+  }
+
+}
+
+.mail {
+  font-size: clamp(0.935rem, calc(0.15rem + 1.25vw), 1.06rem);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .socials {
@@ -80,7 +114,15 @@
   display: -ms-flexbox;
   display: flex;
   margin: auto 0;
+
+  @media (max-width: 900px) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
+
 //TODO добавить анимацию-цветом при наведении на соц сети
 .viber,
 .whatsapp {
@@ -89,29 +131,17 @@
   display: flex;
 
   -webkit-text-decoration: indianred;
-
   text-decoration: indianred;
   color: inherit;
 
   -webkit-box-shadow: inset 0 0 0 0 $greyLine;
-
   box-shadow: inset 0 0 0 0 $greyLine;
-  // margin: 0 -0.25rem;
   padding: 5px;
   -webkit-transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
-    -webkit-box-shadow 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
-    -webkit-box-shadow 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
-    -webkit-box-shadow 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
-    -webkit-box-shadow 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
-    -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 
   &:hover {
     cursor: pointer;
@@ -122,10 +152,10 @@
 
 .viber {
   margin-right: 11px;
-}
 
-.whatsapp {
-  margin-right: 83px;
+  @media (max-width: 900px) {
+    margin-right: 0;
+  }
 }
 
 .viberLogo,
@@ -138,34 +168,19 @@
 .viberLogo,
 .whatsappLogo {
   margin-right: 7px;
+
+  @media (max-width: 900px) {
+    margin-right: 0;
+  }
 }
 
 .viberLogoText,
 .whatsappLogoText {
+  font-size: clamp(0.935rem, calc(0.15rem + 1.25vw), 1.06rem);
   margin: auto 0;
   font-family: Cambria, 'Playfair Display', serif;
-  // font-size: 18px;
-}
-//TODO добавить анимацию смены цвета при наведении на кнопку
-.callback {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto 0;
-  width: 230px;
-  height: 58px;
-  border: 1px solid $greyLine;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
 
-  &:hover {
-    cursor: pointer;
-    background-color: $greyLine;
+  @media (max-width: 900px) {
+    display: none;
   }
-}
-
-.callbackText {
-  margin: auto;
-  // font-size: 18px;
 }

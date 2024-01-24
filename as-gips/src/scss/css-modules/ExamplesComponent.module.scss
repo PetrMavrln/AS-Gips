@@ -14,13 +14,10 @@
 }
 
 .header2 {
-  font-size: clamp(1.61rem, 1.15rem + 1.25vw, 2.36rem);
+  font-size: clamp(1.61rem, calc(1.15rem + 1.25vw), 2.36rem);
   margin: 55px auto;
-}
-@media (max-width: 450px) {
-  .header2 {
+
+  @media (max-width: 450px) {
     margin: 30px auto;
   }
 }
-
-/*# sourceMappingURL=ProductionComponent.module.css.map */
