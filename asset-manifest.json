@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.78f6eebc.css",
-    "main.js": "./static/js/main.705cd215.js",
+    "main.css": "./static/css/main.cbcd2064.css",
+    "main.js": "./static/js/main.2b7381b8.js",
     "static/media/Examples3.png": "./static/media/Examples3.bcac4d2996dd75b1288c.png",
     "static/media/Examples2.jpg": "./static/media/Examples2.93301bfff562eac5d762.jpg",
     "static/media/logo.png": "./static/media/logo.f13a52d2ebf0db38c1f1.png",
@@ -10,20 +10,20 @@
     "static/media/prod11.png": "./static/media/prod11.73a73c4cbd19d34c6da5.png",
     "static/media/prod0.png": "./static/media/prod0.3c3d2f8352de5dbd2831.png",
     "static/media/prod4.png": "./static/media/prod4.3a8fc762affd423b87d2.png",
+    "static/media/prod10.png": "./static/media/prod10.71f37235d45dd5596286.png",
     "static/media/prod6.png": "./static/media/prod6.a0b1aa92a2236ad00265.png",
     "static/media/prod5.png": "./static/media/prod5.ff21595924c53575d84a.png",
-    "static/media/prod10.png": "./static/media/prod10.edfd1d0c6f715c29d116.png",
     "static/media/prod3.png": "./static/media/prod3.515d1eda5a4218707946.png",
     "static/media/prod1.png": "./static/media/prod1.1095fe39eec28693435f.png",
     "static/media/prod8.png": "./static/media/prod8.699c9f9e72c5fa8ba4c8.png",
     "static/media/Viber-Logo.svg": "./static/media/Viber-Logo.f1b8b8a06cc81a336979a85bc0231de3.svg",
     "static/media/WhatsApp-icon.svg": "./static/media/WhatsApp-icon.6b1cea7ff7a64568d1aa948a79a5d8d7.svg",
     "index.html": "./index.html",
-    "main.78f6eebc.css.map": "./static/css/main.78f6eebc.css.map",
-    "main.705cd215.js.map": "./static/js/main.705cd215.js.map"
+    "main.cbcd2064.css.map": "./static/css/main.cbcd2064.css.map",
+    "main.2b7381b8.js.map": "./static/js/main.2b7381b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.78f6eebc.css",
-    "static/js/main.705cd215.js"
+    "static/css/main.cbcd2064.css",
+    "static/js/main.2b7381b8.js"
   ]
 }
