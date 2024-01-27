@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.621deabf.css",
+    "main.css": "./static/css/main.4c6ee4d1.css",
     "main.js": "./static/js/main.87981446.js",
     "static/media/Examples3.png": "./static/media/Examples3.bcac4d2996dd75b1288c.png",
     "static/media/Examples2.jpg": "./static/media/Examples2.93301bfff562eac5d762.jpg",
@@ -20,11 +20,11 @@
     "static/media/WhatsApp-icon.svg": "./static/media/WhatsApp-icon.6b1cea7ff7a64568d1aa948a79a5d8d7.svg",
     "static/media/Phone-Logo.svg": "./static/media/Phone-Logo.5a5faab704f331ffc18243997bad8ffe.svg",
     "index.html": "./index.html",
-    "main.621deabf.css.map": "./static/css/main.621deabf.css.map",
+    "main.4c6ee4d1.css.map": "./static/css/main.4c6ee4d1.css.map",
     "main.87981446.js.map": "./static/js/main.87981446.js.map"
   },
   "entrypoints": [
-    "static/css/main.621deabf.css",
+    "static/css/main.4c6ee4d1.css",
     "static/js/main.87981446.js"
   ]
 }
