@@ -1,0 +1,162 @@
+.wrapper {
+  max-width: 1465px;
+  margin: 0 auto;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 55px;
+}
+@media (max-width: 450px) {
+  .container {
+    margin-bottom: 30px;
+  }
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media (max-width: 550px) {
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.contentImg {
+  width: 200px;
+  height: 100%;
+  margin: auto 15px;
+}
+@media (max-width: 950px) {
+  .contentImg {
+    width: 150px;
+  }
+}
+@media (max-width: 750px) {
+  .contentImg {
+    width: 100px;
+  }
+}
+@media (max-width: 550px) {
+  .contentImg {
+    margin-bottom: 15px;
+  }
+}
+
+.header2 {
+  font-size: clamp(1.61rem, 1.15rem + 1.25vw, 2.36rem);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 55px auto;
+}
+@media (max-width: 450px) {
+  .header2 {
+    margin: 30px auto;
+  }
+}
+
+.text {
+  width: 700px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0;
+  padding: 0 45px;
+}
+@media (max-width: 950px) {
+  .text {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 10px;
+  }
+}
+
+.p {
+  margin-bottom: 15px;
+}
+
+.connections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.viber,
+.whatsapp,
+.tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: indianred;
+  text-decoration: indianred;
+  color: inherit;
+  -webkit-box-shadow: inset 0 0 0 0 #e9e9e9;
+  box-shadow: inset 0 0 0 0 #e9e9e9;
+  padding: 5px;
+  -webkit-transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+.viber:hover,
+.whatsapp:hover,
+.tel:hover {
+  cursor: pointer;
+  -webkit-box-shadow: inset 175px 0 0 0 #e9e9e9;
+  box-shadow: inset 175px 0 0 0 #e9e9e9;
+}
+
+.viberLogo,
+.whatsappLogo,
+.phoneLogo {
+  width: 28px;
+  height: 28px;
+  margin: auto 7px auto 0;
+}
+@media (max-width: 900px) {
+  .viberLogo,
+  .whatsappLogo,
+  .phoneLogo {
+    margin-right: 0;
+  }
+}
+
+.viberLogoText,
+.whatsappLogoText,
+.phoneLogoText {
+  font-size: clamp(0.935rem, 0.15rem + 1.25vw, 1.06rem);
+  margin: auto 0;
+  font-family: Cambria, "Playfair Display", serif;
+}
+@media (max-width: 900px) {
+  .viberLogoText,
+  .whatsappLogoText,
+  .phoneLogoText {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=ConsultationComponent.module.css.map */

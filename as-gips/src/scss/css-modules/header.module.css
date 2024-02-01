@@ -1,6 +1,10 @@
 .fullScreenWr {
+  position: sticky;
+  top: 0;
   width: 100%;
   border-bottom: 1px solid #6b6b6b;
+  z-index: 99;
+  background-color: white;
 }
 
 .wrapper {

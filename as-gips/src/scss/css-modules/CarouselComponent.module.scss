@@ -1,37 +1,37 @@
-.mySwiper {
-  width: 100%;
-  height: 800px;
-  margin-bottom: 55px;
+ // TODO сделать нормальную адаптивку для слайдера
+ .mySwiper {
+   width: 90%;
+   height: 700px;
+   margin-bottom: 55px;
 
-  @media (max-width: 1550px) {
-    width: 90%;
-    height: 700px;
-  }
+   @media (max-width: 1550px) {
+     height: 650px;
+   }
 
-  @media (max-width: 1250px) {
-    height: 60vh;
-  }
+   @media (max-width: 1250px) {
+     height: 60vh;
+   }
 
-  @media (max-width: 750px) {
-    height: 30vh;
-  }
+   @media (max-width: 750px) {
+     height: 30vh;
+   }
 
-  @media (max-width: 450px) {
-    margin-bottom: 30px;
-  }
-}
+   @media (max-width: 450px) {
+     margin-bottom: 30px;
+   }
+ }
 
-.swiperSlide {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
+ .swiperSlide {
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+ }
 
-.exmplImg {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-}
+ .exmplImg {
+   width: 100%;
+   height: 100%;
+   -o-object-fit: cover;
+   object-fit: cover;
+   -o-object-position: center;
+   object-position: center;
+ }

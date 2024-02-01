@@ -48,7 +48,6 @@ const HeaderComponent = () => {
               />
               <span className={styles.viberLogoText}>viber</span>
             </a>
-
             <a
               href="https://api.whatsapp.com/send?phone=79878033963"
               className={styles.whatsapp}

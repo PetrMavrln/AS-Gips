@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../scss/css-modules/RepresentComponent.module.css';
+
 import reprImg from '../assets/RepresentComponent/representImg.png';
 
 const RepresentComponent = () => {

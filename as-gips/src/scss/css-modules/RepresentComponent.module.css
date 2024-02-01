@@ -37,7 +37,7 @@
   position: relative;
   margin: auto 0;
   padding: 45px;
-  width: 650px;
+  max-width: 650px;
   height: 490px;
 }
 @media (max-width: 1050px) {
